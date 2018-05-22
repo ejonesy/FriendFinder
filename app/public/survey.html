@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="fa fa-fire"></span>Friend Finder Survey!</h1>
+      <hr>
+      <h2 class="text-center">Answer the questions to find your new BFF</h2>
+      <br>
+
+      <div class="text-center">
+        <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Results</button></a>
+        <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">About You</h2>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+
+              <div class="form-group">
+                <h3>Name</h3>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <h3>Link to photo (required)</h3>
+                <input type="text" class="form-control" id="photo" required>
+              </div>
+              
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h3>Question 1</h3>
+            <h4>How do you take your steak?</h4>
+            <select class="chosen-select" id="q1" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Blue)</option>
+                <option value="2">2 (Rare)</option>
+                <option value="3">3 (Med Rare)</option>
+                <option value="4">4 (Medium)</option>
+                <option value="5">5 (Meatless)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q1_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results dropdown-menu option">
+                        <li class="active-result" data-option-array-index="1" style>1 (Blue)</li>
+                        <li class="active-result" data-option-array-index="2" style>2 (Rare)</li>
+                        <li class="active-result" data-option-array-index="3" style>3 (Med Rare)</li>
+                        <li class="active-result" data-option-array-index="4" style>4 (Medium)</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (Meatless)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 2</h3>
+            <h4>Are you a cat person?</h4>
+            <select class="chosen-select" id="q2" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Hell no)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (You're goddamn right I am)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q2_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Hell no)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (You're goddamn right I am)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 3</h3>
+            <h4>Are you a dog person?</h4>
+            <select class="chosen-select" id="q3" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Hell no)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (You're goddamn right I am)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q3_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Hell no)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (You're goddamn right I am)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 4</h3>
+            <h4>Do you consider the earth to be spherical in shape?</h4>
+            <select class="chosen-select" id="q4" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Hell no)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (You're goddamn right I do)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q4_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Hell no)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (You're goddamn right I do)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 5</h3>
+            <h4>Do you consider yourself a strong proponent of photosynthetic processes?</h4>
+            <select class="chosen-select" id="q5" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Hell no)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (You're goddamn right I do)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q5_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Hell no)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (You're goddamn right I do)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 6</h3>
+            <h4>Do your friends think of you as a noble land mermaid?</h4>
+            <select class="chosen-select" id="q6" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Hell no)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (You're goddamn right they do)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q6_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Hell no)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (You're goddamn right they do)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 7</h3>
+            <h4>How do you feel about rocks?</h4>
+            <select class="chosen-select" id="q7" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Very weakly)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Very strongly)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q7_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Very weakly)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (Very strongly)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 8</h3>
+            <h4>Does grass give you cause for sneezing?</h4>
+            <select class="chosen-select" id="q8" style="display: none;">
+                <option value></option>
+                <option value="1">1 (Not even when I apply it directly)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Till my nose bleeds)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q8_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (Not even when I apply it directly)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (Till my nose bleeds)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 9</h3>
+            <h4>Did you see that ludicrous display last night?</h4>
+            <select class="chosen-select" id="q9" style="display: none;">
+                <option value></option>
+                <option value="1">1 (What?)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (I understood this reference)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q9_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (What?)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (I understood this reference!)</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Question 10</h3>
+            <h4>How do you feel about dishtowels?</h4>
+            <select class="chosen-select" id="q10" style="display: none;">
+                <option value></option>
+                <option value="1">1 (They're for snooty people)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (I'm snooty and I'm proud!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q10_chosen">
+                <a class="chosen-single chosen-default">
+                    <span>Select an option</span>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1" style>1 (They're for snooty people)</li>
+                        <li class="active-result" data-option-array-index="2" style>2</li>
+                        <li class="active-result" data-option-array-index="3" style>3</li>
+                        <li class="active-result" data-option-array-index="4" style>4</li>
+                        <li class="active-result" data-option-array-index="5" style>5 (I'm snooty and I'm proud!)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true">
+            </i>
+            Submit
+        </button>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    //this makes the options a dropdown
+    $(".dropdown-menu li a").click(function(){
+    var selText = $(this).text();
+    $(this).parents('.form-group').find('button[data-toggle="dropdown"]').html(selText+' <span class="caret"></span>');
+    });
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: $("#results").val().trim(),
+        //total: add up the results somehow
+      };
+
+      console.log(newFriend);
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+      // depending on if a tables is available or not.
+
+      $.post("/api/friends", newFriend,
+        function(data) {
+
+          if (data <= newFriend.total) {
+            alert("you are now friends with ", newFriend);
+          }
+          else {
+            alert("you have zero matches");
+          }
+
+          $("#name").val("");
+          $("#photo").val("");
+          $("#results").val("");
+
+        });
+
+    });
+
+</script>

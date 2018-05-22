@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "find the perfect friend",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejonesy/FriendFinder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder",
+    "survey"
+  ],
+  "author": "eve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejonesy/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/ejonesy/FriendFinder#readme"
+}
