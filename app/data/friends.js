@@ -1,3 +1,6 @@
+//empty array to hold my results
+var myresults = [];
+
 //array of friend objects, each with a name, photo, and their scores
 var friends = [
 
@@ -7,7 +10,6 @@ var friends = [
        "scores": [
            3, 5, 1, 4, 5, 2, 1, 3, 3, 4
        ],
-       "total": 31
     },
     {
         "name": "Bender",
@@ -15,7 +17,6 @@ var friends = [
         "scores": [
             1, 1, 1, 1, 1, 1, 1, 1, 1, 1
         ],
-        "total": 10
     },
     {
         "name": "Chanandler Bong",
@@ -23,7 +24,6 @@ var friends = [
         "scores": [
             4, 3, 5, 3, 4, 5, 1, 1, 2, 3
         ],
-        "total": 31
     },
     {
         "name": "Leslie Knorpe",
@@ -31,7 +31,6 @@ var friends = [
         "scores": [
             3, 4, 2, 4, 5, 4, 5, 5, 1, 2
         ],
-        "total": 35
     },
     {
         "name": "Date Mike",
@@ -39,7 +38,6 @@ var friends = [
         "scores": [
             1, 1, 1, 1, 1, 1, 3, 2, 4, 2
         ],
-        "total": 17
     },
     {
         "name": "Terry Cruise",
@@ -47,7 +45,6 @@ var friends = [
         "scores": [
             5, 3, 4, 5, 3, 2, 3, 4, 5, 2
         ],
-        "total": 36
     },
     {
         "name": "Jake Butt",
@@ -55,7 +52,6 @@ var friends = [
         "scores": [
             1, 2, 3, 1, 3, 5, 5, 5, 3, 4
         ],
-        "total": 32
     },
     {
         "name": "Seymour",
@@ -63,7 +59,6 @@ var friends = [
         "scores": [
             3, 2, 2, 2, 1, 3, 2, 1, 2, 1
         ],
-        "total": 19
     },
     {
         "name": "Erin",
@@ -71,7 +66,6 @@ var friends = [
         "scores": [
             4, 5, 3, 4, 5, 4, 4, 4, 5, 3
         ],
-        "total": 41
     },
     {
         "name": "Janet Snakehole",
@@ -79,7 +73,6 @@ var friends = [
         "scores": [
             4, 3, 2, 4, 2, 2, 1, 1, 3, 5
         ],
-        "total": 27
     }
 
 ]

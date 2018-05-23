@@ -1,16 +1,15 @@
 var friends = require("../data/friends.js");
-//app = express()
 
 module.exports = function(app) {
 
-    app.get("/api/friends", function(req, res) {
-        res.json(friends)
+    //renders the user's survey results on the results page
+    app.get("/api/results", function(req, res) {
+        res.json(myresults)
     })
 
+    //this takes in the results from the survey and pushes them to the empty myresults array in friends.js
     app.post("/api/friends", function(req, res) {
-        //if friends are compatible
-        //push that req.body json to friends array, set res.json to true
-        //else set res.json to false
+        myresults.push(body);
     })
 
 }
