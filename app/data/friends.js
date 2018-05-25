@@ -76,3 +76,4 @@ var friends = [
     }
 
 ]
+module.exports = friends, myresults;
