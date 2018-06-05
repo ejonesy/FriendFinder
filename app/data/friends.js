@@ -1,6 +1,3 @@
-//empty array to hold my results
-var myresults = [];
-
 //array of friend objects, each with a name, photo, and their scores
 var friends = [
 

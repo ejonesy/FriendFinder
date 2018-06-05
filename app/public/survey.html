@@ -163,10 +163,37 @@
         </button>
     </div>
 
+    <div class="container">
+            <h2>Basic Modal Example</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Show Results</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Your New BFF! Get Crackalackin!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="home.html">Home</a> | <a href="results.html">Results</a> | <a href="https://github.com/ejonesy/FriendFinder">GitHub Repo</a></p>
+        <p><a href="home.html">Home</a> | <a href="https://github.com/ejonesy/FriendFinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -176,42 +203,36 @@
 </html>
 
 <script type="text/javascript">
-
-    $(".submit").on("click", function(event) {
-      event.preventDefault();
-
-      // Here we grab the form elements
-      var myresults = {
-        name: $("#name").val().trim(),
-        photo: $("#photo").val().trim(),
-        scores: [
-            $("#q1").val().trim(),
-            $("#q2").val().trim(),
-            $("#q3").val().trim(),
-            $("#q4").val().trim(),
-            $("#q5").val().trim(),
-            $("#q6").val().trim(),
-            $("#q7").val().trim(),
-            $("#q8").val().trim(),
-            $("#q9").val().trim(),
-            $("#q10").val().trim()
-        ]
-      };
+    console.log("test");
+    $("#submit").on("click", function(event) {
+      //event.preventDefault();
+        console.log("Submitted");
+        // Here we grab the form elements
+        var myresults = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim()
+            ]
+        };
 
       console.log(myresults);
 
-      //this compares the data the user inputs to the friend scores to find the most compatible one
-      $.post("/api/results", myresults,
+      //this calls the new BFF to display in the results modal when it's clicked
+      $.post("/api/friends", myresults,
         function(data) {
-            var absoluteDifference;
-            for (var i=0; i<friends.scores.length; i++) {
-            absoluteDifference += Math.abs(friends[i]-myresults[i])
-            if (absoluteDifference < 5) {
-                console.log ("You are now friends with ", friends[i]);
-            } else {
-                console.log("You are unfriendable, sorry.");
-            }
-        }
+            $(".modal-body").text(myresults);
+            //$(".modal-body").attr("src", data.matchPhoto);
+            $(".modal-body").modal("toggle");
         });
 
     });
